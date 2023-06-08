@@ -15,6 +15,7 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 require('dotenv').config();
 const fast2sms = require('fast-two-sms');
+const http=require('http');
 //admin.initializeApp();
 //const User_firebase = require("./config");
 //const java = require('java');
@@ -452,6 +453,12 @@ app.post('/register.ejs', function(req , res){
 //     res.render("basic_details");
 // });
 
-app.listen(5000, function(){
+const hostname = '0.0.0.0';
+const server = http.createServer((req,res)=>{
+  res.statusCode=200;
+  res.setHeader('Content-Type','text/plain');
+  res.end('zeet code');
+})
+app.listen(5000,hostname, function(){
     console.log("Server started on port : 5000");
 })
