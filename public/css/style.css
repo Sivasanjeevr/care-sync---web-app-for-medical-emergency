@@ -1,0 +1,95 @@
+body{
+    background-color: white;
+}
+.container-fluid{
+    height : 100vh;
+}
+
+.login-image{
+    background: hsla(63, 100%, 77%, 1);
+
+background: linear-gradient(90deg, rgb(229, 233, 158) 0%, rgb(230, 136, 181) 100%);
+
+background: -moz-linear-gradient(90deg, rgb(241, 244, 187) 0%, rgb(236, 142, 188) 100%);
+
+background: -webkit-linear-gradient(90deg, rgb(244, 246, 197) 0%, rgb(231, 148, 188) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FAFF89", endColorstr="#EA72AD", GradientType=1 );
+}
+
+.reg_btn{
+    color:rgb(211, 121, 211);
+}
+
+.logo{
+    width: 100px;;
+}
+
+.finger-print-login{
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    
+}
+.btn{
+     color: aqua;
+}
+.bton{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    position: absolute;
+    left:0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
+    
+}
+.loginarea{
+    position:absolute;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    height:100%;
+    width:50%;
+    background-color: grey;
+}
+h1{
+    color:rgb(33, 29, 29);
+    font-family: "Audiowide", sans-serif;
+    position:absolute;
+    right:18.5%;
+    top:12.1%;
+}
+.logo{
+    height:7%;
+    width:4%;
+    position: absolute;
+    top:13%;
+    right:30%;
+}
+h3{
+    position: absolute;
+    top:65%;
+    left:25%;
+} */
