@@ -1,0 +1,24 @@
+<!-- updation.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Upload and Display</title>
+    <link rel="stylesheet" href="css/patient-dashboard.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Update Profile and Upload PDFs</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept=".pdf">
+        <button type="submit">Upload PDF</button>
+    </form>
+
+    <h2>Your Uploaded PDFs</h2>
+    <div class="pdf-boxes">
+        <% for (const pdf of user.uploadedPDFs) { %>
+            <div class="pdf-box">
+                <a href="<%= pdf.filePath %>" target="_blank"><%= pdf.fileName %></a>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

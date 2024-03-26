@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/doctors_register.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <!-- <div class="content"> -->
+      <div class="content">
+      <form action="doctors_register.ejs" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your name" name="username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="text" placeholder="Enter your username" name="dob" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Specialist</span>
+            <input type="text" placeholder="Enter your Specialist" name="specialist" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" name="phone_number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter Your Address" name="address" required>
+          </div>
+         
+          
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Confirm your password" name="password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="detail">
+            <span class="details">Upload Your Image</span>
+            <a href="/upload-image"><input type="file"  accept="image/*" onchange="loadFile(event)"></a>
+          
+        </div>
+        
+        </div>
+        <div class="input-box">
+          <span class="details">Gender</span>
+          <input type="text" placeholder="Enter your gender" name="gender" required>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <img id="uploaded-image" alt="Uploaded Image" style="max-width: 300px;">
+      </form>
+    </div>
+  </div>
+
+</body>
+<script>
+  function loadFile(event) {
+    const image = document.getElementById('uploaded-image');
+    image.src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+</html>

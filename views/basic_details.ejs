@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Summary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_basic_details.css">
+</head>
+<body>
+
+    <div class="container-fluid" style="background-color: #EDE9D5;">
+        <div class="row" style="font-family:Georgia, 'Times New Roman', Times, serif ;font-weight: 900; font-size: 30px;">
+            <span class="pl-4">Patient Report</span>
+        </div>
+        <div class="row">
+            <div class="col-3 m-3 pb-2" style="border-radius: 10px; background-color: white;">
+                <div class="row pt-5 pb-1">
+                    <div class="col"></div>
+                    
+                    <div class="col-7">
+                        <img src="<%= user.profile %>" width="200" height="200" style="border-radius: 100px;" alt="">
+
+                </div>
+                <div class="col"></div>
+                </div>
+                <div class="row mt-5"></div>
+                <div class="row d-flex justify-content-center" style="color: rgb(39, 17, 162); font-weight:bolder; font-size:30px ; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Times, serif;">
+                    <%= user.username %>
+                </div>
+                <div class="row d-flex justify-content-center" style="font-size: 16px;font-weight:bold">
+                    Patient ID : <%= user.patient_id %> 
+                </div>
+                <div class="row d-flex justify-content-center" style=" font-size:15px;font-weight:bold;">
+                    Age : <%= user.age %>
+                </div>
+                <div class="row mt-5"></div>
+                <div class="row">
+                    <div class="col m-3" style="border-radius: 10px; background-color: white;">
+                        <div class="pt-2 row d-flex justify-content-center" style="color: red; font-size: 22px; font-weight: 700;">
+                            Blood group
+                        </div>
+                        <div class="row pb-2 d-flex justify-content-center" style="font-weight:bolder;">
+                            <%= user.blood_grp %>
+                        </div>
+                        <div class="col-5 ml-5 mt-5 d-felx justify-content-center">
+                            <form action="/send_message" method="POST">
+                                <input type="text" name="hospital_name" placeholder="Enter hospital name or location">
+                                <button class="message" type="submit" style="border-radius: 15px;background-color: rgb(236, 158, 230);"><span style="font-size: larger;">send message</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col mt-2"> 
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-11 m-2" style="border-radius: 30px; background-color: whitesmoke;">
+                        <div class="row mt-4"></div>
+                        <!-- <div class="row"></div> -->
+                        <div class="row d-flex justify-content-center" style="color:grey;">
+                            <div class="col"></div>
+                            <div class="col-10" style="font-weight: 900;font-size:x-large">
+                            <span>Surgical Details:</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-5">
+                                <span style="color: orange; font-size: 24px; font-weight: 700;">Heart Surgery due to stroke <br><span style="color:rgb(70, 188, 188);font-size: 20px;">Dated: 27th march 2020</span></span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row d-flex justify-content-center" style="color:grey;">
+                            <div class="col"></div>
+                            <div class="col-10" style="font-weight: 900;font-size:x-large">
+                            <span>Allergic to:</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-5">
+                                <span style="color: orange; font-size: 24px; font-weight: 700;">Asthma</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row d-flex justify-content-center" style="color:grey;">
+                            <div class="col"></div>
+                            <div class="col-10" style="font-weight: 900;font-size:x-large">
+                            <span>Medicines consuming now:</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-5">
+                                <span style="color: orange; font-size: 24px; font-weight: 700;">Indarol(50mg)</span>
+                            </div>
+                            <div class="col"></div>
+                            <div class="row mt-4"></div>
+                        </div>
+                        
+                    
+                </div>
+                <div class="col"></div>
+                <div class="row mt-4"></div>
+                
+                <!--  -->
+               
+                
+                <div class="row ml-5">
+                    <div class="col-1"></div>
+                    <div class="col-5 m-2 ml-4" style="border-radius: 10px; background-color: white;">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-2 pt-2"><img src="images/arm.png" style="height:50px; width:50px" alt=""></div>
+                            <div class="col">
+                                <div style="color:grey;font-weight: 900;font-size:x-large">Blood Pressure</div>
+                        <div style="color: orange; font-size: 24px; font-weight: 700;"> <%= user.bp %></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-5 m-2 ml-4" style="border-radius: 10px; background-color: white;">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-2 pt-2"><img src="images/sugar-blood-level.png" style="height:52px; width:50px" alt=""></div>
+                            <div class="col">
+                                <div style="color:grey;font-weight: 900;font-size:x-large">Sugar level</div>
+                        <div style="color: orange; font-size: 24px; font-weight: 700;"> <%= user.sugar %></div>
+                            </div>
+                        </div>
+                        
+                    </div>   
+                    
+                </div>
+                
+                <div class="row mt-3"></div>
+                <div class="row" >
+                    
+                    <div class="col mt-3" style="border-radius: 10px; background-color: white;">
+
+                        <div class="row pt-1 pb-1 d-flex justify-content-center" style="font-size: 30px; font-weight: 900;">
+                            Patient Information
+                        </div>
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-4 m-4" style="border:2px solid aqua; border-radius: 10px; background-color: rgb(187, 224, 224);">
+                                <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col p-3"  style="font-weight: bold; font-size: 16px;">
+                                    <div class="row p-1">
+                                        Gender
+                                    </div>
+                                    <div class="row p-1">
+                                        Blood Type
+                                    </div>
+                                    <div class="row p-1">
+                                        Allergies
+                                    </div>
+                                    <div class="row p-1">
+                                        Disease
+                                    </div>
+                                    <div class="row p-1">
+                                        Weight
+                                    </div>
+                                </div>
+                                <div class="col p-3">
+                                    <div class="row p-1">
+                                        <%= user.gender %>
+                                    </div>
+                                    <div class="row p-1">
+                                        <%= user.blood_grp %>
+                                    </div>
+                                    <div class="row p-1">
+                                        Milk, Penicillin
+                                    </div>
+                                    <div class="row p-1">
+                                        Diabetes
+                                    </div>
+                                    <div class="row p-1">
+                                        60
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-5 m-4" style="border:2px solid aqua; border-radius: 10px; background-color: rgb(187, 224, 224);">
+                                <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col p-3"  style="font-weight: bold; font-size: 16px;">
+                                    <div class="row p-1">
+                                        Nominee Name
+                                    </div>
+                                    <div class="row p-1">
+                                        Nominee Relation
+                                    </div>
+                                    <div class="row p-1">
+                                        Nominee Phone no
+                                    </div>
+                                    <div class="row p-1">
+                                        Address
+                                    </div>
+                                </div>
+                                <div class="col p-3">
+                                    <div class="row p-1">
+                                        <%= user.nominee_name %>
+                                    </div>
+                                    <div class="row p-1">
+                                        <%= user.nominee_relation %>
+                                    </div>
+                                    <div class="row p-1">
+                                        <%= user.nominee_number %>
+                                    </div>
+                                    <div class="row p-1">
+                                        <%= user.address %>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="row d-felx justify-content-center m-3">
+            
+            <!-- <div class="col-4 ">
+                <div class="container pt-1">
+                    <form >
+                    <h1 style="color:grey;">Person basic details: </h1>
+                    <p>name:</p>
+                    <p>patient ID: </p>
+                    <p>age: </p>
+                    <p>dob: </p>
+                    <p>Phone number: </p>
+                    <p>gender: </p>
+                    <p>blood group: </p>
+                    <p>nominee name: </p>
+                    <p>address: </p>
+                    <p>weight: </p>
+                    <p>blood pressure: </p>
+                    <p>sugar level:  </p></form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <h1>Update Profile and Upload PDFs</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept=".pdf">
+        <button type="submit">Upload PDF</button>
+    </form>
+
+    <h2>Your Uploaded PDFs</h2>
+    <div class="pdf-boxes">
+        <% for (const pdf of user.uploadedPDFs) { %>
+            <div class="pdf-box">
+                <a href="<%= pdf.filePath %>" target="_blank"><%= pdf.fileName %></a>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MED Vault</title>
+    <link rel="stylesheet" href="css/indexnew.css" />
+  </head>
+  <body>
+    <div class="nav-bar"></div>
+    <div class="logo">
+      <div>
+        <img
+          class="logoo"
+          src="images/logo-ihealth.png"
+          alt=""
+          width="100"
+          height="100"
+        />
+      </div>
+      <div class="title">MED Vault</div>
+    </div>
+    <div class="nav">
+        <div>HOME</div>
+        <a href="/doctors-login.ejs"><div>Doctor's login</div></a>
+        <a href="/patient-loginpage.ejs"><div><p>Patient Login</p></div></a>
+        <a href="/support.ejs"><div>About us</div></a>
+    </div>
+    <div class="adv">
+      <img id="carousel-image" src="" alt="" width="900" height="500" />
+      <!-- <div class="image-text">Text Here</div> -->
+    </div>
+    <br />
+    <!-- Inside the <div class="nav"> element -->
+    <h1 style="text-align: center; padding: 20px">Online Services</h1>
+    <div class="login">
+      <a href="/doctors-login.ejs" class="login-button">Doctor Login</a>
+      <a href="/patient-loginpage.ejs" class="login-button">Patient Login</a>
+    </div>
+    <br />
+    <div class="about-us">
+      <div class="ab1">
+        <h1>WHAT MED Vault OFFERS TO THE CITIZEN?</h1>
+        <p>MED Vault offers so many features like</p>
+      </div>
+      <div class="ab2">
+        <div class="a1">
+          <h3>ONE CITIZEN ONE HEALTH RECORD</h3>
+          <p>
+            Unique Health Record for Citizens by virtue of Aadhaar Based Unique
+            Health Identity Card. He/She can use the card for lifelong at
+            Hospitals for getting treatment.
+          </p>
+        </div>
+        <div class="a1">
+          <h3>ONLINE APPOINTMENT BOOKING AT HOSPITALS</h3>
+          <p>Citizen can book online appointments to any of the Hospitals with ease through Care Sync</p>
+        </div>
+        <div class="a1">
+          <h3>TELEMEDICINE CONSULTATION</h3>
+          <p>
+            eHealth offers the citizens to consult the expert doctors virtually
+            through Telemedicine facility provided through M-eHealth mobile app.
+            For the time being review consultations are started as pilot and
+            will be extended to the general public for booking advance
+            appointments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let images = [
+      "images/dashboard1.jpeg",
+      "images/dashboard2.jpeg",
+      "images/dashboard3.jpeg",
+    ];
+    let currentIndex = 0;
+    const imgElement = document.getElementById("carousel-image");
+
+    function changeImage() {
+      imgElement.src = images[currentIndex];
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    setInterval(changeImage, 3000); // Switch every 3 seconds
+  </script>
+</html>

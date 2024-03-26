@@ -1,0 +1,88 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.nav-bar{
+  width:100%;
+  border: solid #fbc837 1px;
+  background-color: #fbc837;
+  height:20px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.logoo{
+  margin-left: 70px;
+}
+
+.title{
+  margin-left:auto;
+  margin-top: 20px;
+  margin-right: 70px;
+  font-family: Orbitron;
+  font-weight: 1000;
+  font-size: 45px;
+}
+.nav{
+  margin-bottom:20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width:100%;
+  border: solid #00d5b1 1px;
+  background-color: #00d5b1;
+  height:30px;
+}
+.nav div{ 
+  padding-bottom:20px;
+  margin-left: 50px;
+}
+
+.adv{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; 
+}
+
+.about-us{
+  margin-top: 200px;
+  background-color: rgba(31, 48, 134, 0.512);
+  margin-bottom: 200px;
+
+}
+
+.ab1{
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column; 
+}
+
+.ab1 h1{
+  color:#fff;
+  font-weight: bold;
+}
+
+.ab1 p{
+  color:#fbc837;
+
+}
+
+.ab2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.a1{
+  margin: 70px;
+}
+
+.a1 h3{
+  color: #fbc837;
+  font-size: 19px;
+  margin: 0 0 10px;
+
+}

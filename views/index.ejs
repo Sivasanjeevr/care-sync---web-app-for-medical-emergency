@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <title>I HEALTH</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid p-0">
+    <div class="row" style="height:100%">
+      <div class="col-6 login-image">
+        <div class="row mt-5"></div>
+        <div class="row mt-5"></div>
+        <div class="row mt-5">
+          <div class="col d-flex justify-content-center">
+            <img src="images/newbig.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col d-flex justify-content-center">
+            <h4 style="font-family: 'Sofia',sans-serif;">
+              The Presence of Doctor is the beginning of cure..
+            </h4>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col">
+            <div class="row mt-5"></div>
+            <div class="row mt-5"></div>
+            <!--Logo starts-->
+            <div class="row">
+
+              <div class="col-3"></div>
+              <div class="col-1">
+                <img class="logo" src="images/logo-ihealth.png">
+              </div>
+              <div class="col-4 text-center pt-5 ml-4 pl-4" style="font-family: Audiowide; font-size: 25px;">I HEALTH
+              </div>
+              <div class="col"></div>
+            </div>
+            <!--Logo end-->
+
+            <!-- Login button starts-->
+
+            <div class="row  mt-3 pl-5">
+              <form action="/" method="POST" target="_blank">
+                <div class="col-2"></div>
+                <div class="col">
+                  <div class="row mt-5">
+                    <div class="col">
+                      <a href="finger_print.ejs">
+                        <div class="btn rounded finger-print-login " style="width:100%">
+                          Login with fingerprint
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
+                  <div class="row mt-4"></div>
+                  <div class="row">
+                    <div class="col">
+                      <div
+                        class=" d-flex flex-row align-items-center justify-content-center justify-content-lg-start mt-4">
+                        <hr class="col-4">
+                        <p class="col-2 d-flex justify-content-center lead fw-normal mb-0 me-3">or
+                          <hr class="col-4">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3"></div>
+
+                  <div class="row mt-5">
+                    <div class="col-10">
+                      <div>
+                        <input type="email" class="form-control" name="email" placeholder="Email Id*" aria-label="Small"
+                          aria-describedby="inputGroup-sizing-sm">
+                        <div class="row mt-4"></div>
+                        <input type="password" class="form-control" name="password" placeholder="Password*"
+                          aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-10 text-center">
+                      <button class="btn" type="submit"
+                        style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );">login</button>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3">
+                    <div class="col-2"></div>
+                    <div class="col-9">
+                    <p>New to IHEALTH, <a href="register.ejs" class="reg_btn">register here</a></p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-1"></div>
+              </form>
+            </div>
+
+
+            <!--Login button end-->
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/front.js" type="text/javascript">
+    console.log("Hello");
+    getPosts()
+  </script>
+</body>
+
+</html>

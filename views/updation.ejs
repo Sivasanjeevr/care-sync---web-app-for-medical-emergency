@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+        
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="updation.ejs" method="POST">
+            <div class="row mt-5">
+                <div class="col-4"></div>
+
+                <div class="col" style="background-color:rgb(229, 230, 230); border-radius: 10px;">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col pt-2 d-flex justify-content-center" style="font-weight: 700; color:rgb(81, 83, 83); font-size: 22px;">
+                                    Update Patient Info
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" placeholder="username" name="username" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="dob" placeholder="date of birth" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="patient_number" placeholder="phone number" autocomplete="off">
+                                </div>
+                            </div>
+        
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="age" placeholder="age" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="gender" placeholder="gender" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="blood_grp" placeholder="blood group" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="nominee_name" placeholder="nominee name" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="nominee_number" placeholder="nominee phone number" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="nominee_relation" placeholder="nominee relation" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <input class="p-1" style="width:100%; border-radius: 5px; border-color: white;" type="text" name="address" placeholder="Address" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row pt-4 pb-3">
+                                <div class="col">
+                                    <button class="p-1 pl-5 pr-5" type="submit" style="width:100% !important; border-radius: 7px; background-color: rgb(41, 122, 90); color: white">Update</button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    
+                    
+                   
+
+                </div>
+
+                <div class="col-4"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
